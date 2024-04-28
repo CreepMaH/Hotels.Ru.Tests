@@ -1,4 +1,6 @@
-﻿namespace Hotels.Ru.Tests
+﻿using MoreLinq;
+
+namespace Hotels.Ru.Tests
 {
     internal class Program
     {
@@ -8,7 +10,10 @@
             string comp28Name = ComputersCount.GetComputersCountName(28);
             Console.WriteLine(comp28Name);  //"28 компьютеров"
 
-
+            //Задание №2
+            int[] input = [42, 12, 18];
+            int[] output = CommonDividers.GetCommonDividers(input);
+            Console.WriteLine(output.ToDelimitedString(", "));
         }
 
         
