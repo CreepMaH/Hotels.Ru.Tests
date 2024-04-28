@@ -13,7 +13,12 @@ namespace Hotels.Ru.Tests
             //Задание №2
             int[] input = [42, 12, 18];
             int[] output = CommonDividers.GetCommonDividers(input);
-            Console.WriteLine(output.ToDelimitedString(", "));
+            Console.WriteLine(output.ToDelimitedString(", "));  //"2, 3, 6"
+
+            //Задание №3
+            int numBegin = 11, numEnd = 20;
+            List<int> simpleNumbers = SimpleNumbers.GetSimpleNumbers(numBegin, numEnd);
+            Console.WriteLine(simpleNumbers.ToDelimitedString(", "));  //"11, 13, 17, 19"
         }
 
         
